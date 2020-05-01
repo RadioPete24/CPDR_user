@@ -1,0 +1,140 @@
+---
+title: "CPDR_manuscript"
+author: "Peter Ching-Tze Ip$^{(}*,1}$, Thomas Avino$^{*,1}$, Judy Polakoff$^{*,1}$, Sandy Kwong$^{*,1}$, Mark Damesyn$^{*,1}$"
+date: "April 2020"
+output: 
+pdf_document:
+  fig_caption: yes
+  fig_height: 5
+  fig_width: 5
+  keep_tex: yes
+  md_extensions: +implicit_figures
+word_document:
+  fig_caption: yes
+  fig_height: 5
+  fig_width: 5
+  md_extensions: +implicit_figures
+  reference_docx: aje-word-style.docx
+header-includes: \usepackage{setspace}\doublespacing
+csl: nature.csl
+bibliography: ca-parkinsons_monitr.bib
+    
+---
+Files for style csl files can be located <https://github.com/citation-style-language/styles> or for additional guides <https://citationstyles.org>
+
+```{r global-options, include=FALSE}
+
+knitr::opts_chunk$set(fig.width=7.5, fig.height = 5, fig.path = 'figs/',
+                      echo = FALSE, warning = FALSE, message = FALSE,
+                      dev = "pdf")
+
+my_round = function(x, k) format(round(x, k), nsmall = k)
+
+
+```
+
+```{r load-results}
+
+#library(caPDmonitr)
+library(gridExtra)
+library(ggplot2)
+library(broom)
+library(scales)
+library(knitr)
+theme_set(theme_bw())
+data("cpdr_index")
+source('../')
+
+
+```
+
+
+\
+
+<!--\begingroup \small
+
+\vspace{10em} -->
+
+
+#### Author Affiliations
+1. California Department of Public Health, Sacramento, California, USA
+2. University of California, Los Angeles, California, USA
+3.
+
+*Correspondence to Peter.Ip@cdph.ca.gov
+
+\
+
+<!-- \endgroup-->
+<!-- \clearpage-->
+
+<!-- \clearpage-->
+
+
+# Introduction
+
+# Methods
+
+### Estimating... 
+
+### Modeling...
+
+### Data Availability
+
+We developed open-source software, including a freely-available web application at [https://](https://). The source code for the web app, the data for the analyses, and the code to reproduce this manuscript itself are freely availabe online under, with a static version in an open-access digital library [@Peter:2020x]. All analyses were run in `r R.version.string`.[@rcoreteam]. These tools enable others to easily implement our model and reproduce our results.
+
+# Results
+
+### Measure Estimates
+
+```{r figure1-demographic, fig.path='static-figures/', fig.show = 'hide', fig.height = 5, cache = FALSE, eval = TRUE, dev = 'tiff'}
+
+data(cpdr_index)
+
+grid.arrange(something
+             , arrangeGrob(, , , heights = c(0.32, 0.32, 0.36))
+             , ncol = 2
+             )
+
+
+```
+
+```{r somekinaplots, fig.show = 'hide', cache = FALSE}
+
+
+## making plots
+
+```
+
+
+
+
+```{r , echo=FALSE}
+
+```
+
+# Discussion
+
+
+# Acknowledgements
+
+# Author Contributions
+
+# Competing Financial Interests
+
+# Tables
+
+
+<!-- \clearpage-->
+
+# Figure captions
+
+
+
+\
+<!-- \clearpage-->
+
+# Bibliography
+
+
+<!-- \clearpage-->
